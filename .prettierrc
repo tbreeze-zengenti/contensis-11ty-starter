@@ -1,0 +1,10 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "indentStyle": "space",
+  "indentSize": 2,
+  "endOfLine": "crlf",
+  "printWidth": 80,
+  "arrowParens": "always"
+}

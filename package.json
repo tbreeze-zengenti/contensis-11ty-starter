@@ -1,0 +1,24 @@
+{
+  "name": "contensis-11ty-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "axios": "^1.7.2",
+    "clean-css": "^5.3.3",
+    "contensis-delivery-api": "^1.4.1",
+    "dotenv": "^16.4.5",
+    "eleventy-plugin-error-overlay": "^1.0.0",
+    "html-minifier": "^4.0.0",
+    "prettier": "^3.2.5"
+  }
+}

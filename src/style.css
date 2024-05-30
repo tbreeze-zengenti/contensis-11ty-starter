@@ -1,0 +1,162 @@
+:root {
+  --brand-color: rgb(55, 191, 167);
+  --space-2xs-xs: clamp(0.5rem, 0.375rem + 0.625vi, 0.75rem);
+  --space-xs-s: clamp(0.75rem, 0.625rem + 0.625vi, 1rem);
+  --space-s-m: clamp(1rem, 0.75rem + 1.25vi, 1.5rem);
+  --space-m-l: clamp(1.5rem, 1.25rem + 1.25vi, 2rem);
+  --step-0: clamp(1rem, 1rem + 0vi, 1rem);
+  --step-4: clamp(2.0736rem, 1.8897rem + 0.9195vi, 2.4414rem);
+  --step-5: clamp(2.4883rem, 2.2066rem + 1.4086vi, 3.0518rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Sets base font to 16px */
+body {
+  min-height: 100vh;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden,
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* 
+ * Theme 
+ */
+
+body {
+  padding: var(--space-s-m, 2rem);
+  font-size: var(--step-0, 1rem);
+  line-height: 1.5;
+}
+
+header,
+main {
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+main {
+  margin-block-start: var(--space-s-m, 1.5rem);
+}
+
+h1 {
+  max-width: 25ch;
+  font-size: var(--step-5, 3rem);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--step-4, 2.4375rem);
+}
+
+a {
+  color: var(--brand-color);
+}
+
+*:focus,
+*:focus-visible {
+  outline: transparent solid 4px;
+  box-shadow:
+    #fff 0 0 0 2px,
+    #000040 0 0 0 4px;
+}
+
+p {
+  margin-block-start: var(--space-xs-s, 1rem);
+}
+
+.blog-list {
+  padding: 0;
+  padding-inline-start: var(--space-xs-s, 1rem);
+  margin: 0;
+}
+
+.blog-list__item {
+  margin-block-start: var(--space-2xs-xs, 1rem);
+}
+
+article.blog-post {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 20rem;
+  }
+
+  h1 {
+    margin-block-start: var(--space-xs-s, 1rem);
+  }
+}
+
