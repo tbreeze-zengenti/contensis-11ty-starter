@@ -11,7 +11,7 @@ permalink: '/blogs/{{ blog.slug }}'
 
 <article class="blog-post">
 
-  <img src="https://iis-live-leif.cloud.contensis.com{{ blog.image.src }}" alt="{{ blog.image.alt }}" />
+<img src="{% image blog.image.src %}" alt="{{ blog.image.alt }}" />
 
 # {{ blog.title }}
 
