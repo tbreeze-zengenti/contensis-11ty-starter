@@ -26,7 +26,7 @@ npm run dev
 
 ### Contensis JS Delivery API
 
-To configure the project for your Contensis environment a .env file is provided. This will define a suitable client config for working with the (Contensis JS Delivery API)[https://www.npmjs.com/package/contensis-delivery-api].
+To configure the project for your Contensis environment a .env file is provided. This will define a suitable client config for working with the [Contensis JS Delivery API](https://www.npmjs.com/package/contensis-delivery-api).
 
 ### Axios
 
