@@ -1,12 +1,8 @@
 const HtmlMin = require('html-minifier');
-const ErrorOverlay = require('eleventy-plugin-error-overlay');
 const CleanCSS = require('clean-css');
-
-const shortcodes = {};
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setTemplateFormats(['md']);
-  eleventyConfig.addPlugin(ErrorOverlay);
 
   // https://www.11ty.io/docs/quicktips/inline-css/
   eleventyConfig.addFilter('cssmin', function (code) {
