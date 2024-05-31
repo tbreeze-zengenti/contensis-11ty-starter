@@ -1,4 +1,6 @@
-## Contensis 11ty (Eleventy) Starter
+![Contensis 11ty Starter](/readme.png)
+
+# Contensis 11ty (Eleventy) Starter
 
 A starter project for building completely static websites with [Contensis](https://www.contensis.com/) and [11ty](https://www.11ty.dev/).
 
@@ -33,3 +35,4 @@ As an alternative to the JS Delivery API an Axios example is provided within the
 ## Deployment
 
 A Dockerfile is included for deploying the application to Contensis's Blocks infrastructure.
+
